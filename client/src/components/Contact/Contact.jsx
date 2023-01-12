@@ -2,10 +2,33 @@ import React, { useRef } from 'react';
 import { MdContacts, MdContactMail } from 'react-icons/md';
 import { AiOutlineSend } from 'react-icons/ai';
 import emailjs from '@emailjs/browser';
+import axios from 'axios';
 import './Contact.css'
+import { useState } from 'react';
 
 const Contact = () => {
 
+    // Saving Data into the database
+    const [username, setUsername] = useState('');
+    const [usermail, setUserMail] = useState('');
+    const [usermessage, setUserMessage] = useState('');
+
+
+    const AddUser = async () => {
+        try {
+            await axios.post('http://localhost:5000/addUser', {
+                username: username,
+                usermail: usermail,
+                usermessage: usermessage,
+            })
+            alert("Message Sent Successfully");
+            // location.reload();
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    // Send mail using EMAILJS
     const form = useRef();
 
     const sendMail = (e) => {
@@ -56,19 +79,25 @@ const Contact = () => {
                         <div className="contact__inputs grid">
                             <div className="contact__content">
                                 <label className="contact__label">Name</label>
-                                <input type="text" className="contact__input" name='username' />
+                                <input type="text" className="contact__input" name='username'
+                                    onChange={(e) => setUsername(e.target.value)}
+                                />
                             </div>
                             <div className="contact__content">
                                 <label className="contact__label">Email</label>
-                                <input type="email" className="contact__input" name='usermail' />
+                                <input type="email" className="contact__input" name='usermail'
+                                    onChange={(e) => setUserMail(e.target.value)}
+                                />
                             </div>
                             <div className="contact__content">
                                 <label className="contact__label">Message</label>
-                                <textarea cols='0' rows='7' className="contact__input" name='usermessage' />
+                                <textarea cols='0' rows='7' className="contact__input" name='usermessage'
+                                    onChange={(e) => setUserMessage(e.target.value)}
+                                />
                             </div>
 
                             <div>
-                                <button className="button btn--flex contact_btn submit_btn">Send Message &nbsp;<AiOutlineSend className='button__icon' /></button>
+                                <button className="button btn--flex contact_btn submit_btn" onClick={AddUser}>Send Message &nbsp;<AiOutlineSend className='button__icon' /></button>
                             </div>
                         </div>
                     </form>
@@ -78,4 +107,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Contact;
