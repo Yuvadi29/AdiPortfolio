@@ -1,5 +1,6 @@
 import React from 'react';
 import { BsInstagram, BsYoutube, BsGithub } from 'react-icons/bs';
+import ScrollTop from '../ScrollTop/ScrollTop';
 import './Footer.css';
 
 const Footer = () => {
@@ -43,6 +44,7 @@ const Footer = () => {
                     <p className="footer__copy">&#169; Aditya Trivedi. All Rights Reserved</p>
                 </div>
             </footer>
+            <ScrollTop/>
         </div>
     )
 }
