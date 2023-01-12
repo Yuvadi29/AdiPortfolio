@@ -182,7 +182,7 @@ img {
         font-size: var(--font-size-normal);
     }
 
-    .service__container {
+    .services__container {
         grid-template-columns: max-content;
         justify-content: center;
     }
@@ -195,7 +195,7 @@ img {
         padding: 0 .5rem;
     }
 
-    .project__image {
+    .blob__image {
         width: 200px;
     }
 
@@ -205,7 +205,7 @@ img {
         align-items: center;
     }
 
-    .testimonial__image {
+    .testimonial__img {
         margin-right: 0;
         margin-bottom: var(--mb-0-25);
     }
@@ -221,11 +221,11 @@ img {
         grid-template-columns: max-content 1fr 1fr;
     }
 
-    .home__data {
+    .data {
         grid-column: initial;
     }
 
-    .home__image {
+    .blob__img {
         order: 1;
         justify-self: center;
     }
@@ -233,8 +233,7 @@ img {
     .about__container,
     .skills__container,
     .portfolio__container,
-    .project__container,
-    .contact__containeer,
+    .contact__container,
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -309,7 +308,7 @@ img {
         column-gap: 5rem;
     }
 
-    .about__img {
+    .about__image {
         width: 350px;
     }
 
@@ -325,7 +324,7 @@ img {
         justify-content: initial;
     }
 
-    .service__container {
+    .services__container {
         grid-template-columns: repeat(3, 220px);
         justify-content: center;
     }
@@ -342,7 +341,7 @@ img {
         width: 450px;
     }
 
-    .portfolio__image {
+    .collab__image {
         width: 320px;
     }
 
@@ -350,24 +349,24 @@ img {
         align-items: center;
     }
 
-    .project {
+    .collab {
         text-align: initial;
     }
 
-    .project__bg {
+    .collab__bg {
         background: none;
     }
 
-    .project__container {
-        background-color: var(--primary-color-alt);
+    .portfolio__container {
         border-radius: 1rem;
         padding: 3rem 2.5rem 0;
         grid-template-columns: 1fr max-content;
         column-gap: 3rem;
     }
 
-    .project__data {
+    .collab__data {
         padding-top: .8rem;
+        margin-top: 120px;
     }
 
     .footer__container {
@@ -408,7 +407,7 @@ img {
         transform: translateX(-6rem);
     }
 
-    .service__container {
+    .services__container {
         grid-template-columns: repeat(3, 238px);
     }
 

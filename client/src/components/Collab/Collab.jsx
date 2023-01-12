@@ -9,7 +9,7 @@ const Collab = () => {
         <div>
             <section className="collab section">
                 <div className="collab_bg">
-                    <div className="collab__container container grid">
+                    <div className=" container grid">
                         <div className="collab__data">
                             <h2 className="collab_title">Wanna Collab for a Project ?</h2>
                             <p className="collab_description">Contact me and let us get it done ASAP</p>

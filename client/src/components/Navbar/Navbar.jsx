@@ -25,7 +25,7 @@ const Navbar = () => {
         <div>
             <header className="header" id="header">
                 <nav className="nav container">
-                    <Link to="/" className="nav__logo">CodeLogo</Link>
+                    <Link to="#" className="nav__logo">CodeLogo</Link>
                     <div className={`nav__menu ${isOpen ? 'show-menu' : ''}`} id="nav-menu" >
                         <ul className="nav__list grid">
                             <li className="nav__item" onClick={() => setIsActive('home')}>
