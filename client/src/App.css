@@ -1,0 +1,140 @@
+/* Font for the entire website */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--font-size-normal);
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color); 
+    font-weight: var(--semi-bold-font);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reusable Classes */
+.section {
+    padding: 2rem 0 4rem;
+}
+
+.section_title {
+    font-size: var(--font-size-h1);
+}
+
+.section_subtitle {
+    display: block;
+    font-size: var(--font-size-small);
+    margin-bottom: var(--mb-0-3);
+}
+
+.section_title,
+.section_subtitle {
+    text-align: center;
+}
+
+.container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+:root {
+    --header-height: 3rem;
+    /* Colors */
+    --hue-color: 250;
+    /* Hue color for the entire website */
+    /* Purple: 250 Green: 142 Blue: 230 Pink: 340*/
+
+    /* Variable CSS */
+    --primary-color: hsl(var(--hue-color), 69%, 61%);
+    --primary-color-second: hsl(var(--hue-color), 69%, 61%);
+    --primary-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --primary-color-light: hsl(var(--hue-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --background: #FFFFFF;
+    --container-color: #ffffff;
+
+
+    /* Font Family */
+    --body-font: 'Poppins', sans-serif;
+
+    /* Imp thing about units: .5rem = 8px, 1rem = 16px, ... */
+    --font-size-large: 2rem;
+    --font-size-h1: 1.5rem;
+    --font-size-h2: 1.25rem;
+    --font-size-h3: 1.125rem;
+    --font-size-normal: .938rem;
+    --font-size-small: .813rem;
+    --font-size-smaller: .75rem;
+
+    /* Font-weight */
+    --medium-font: 500;
+    --semi-bold-font: 600;
+
+    /* Bottom Margin */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-0-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-0-2: 2rem;
+    --mb-0-2-5: 2.5rem;
+    --mb-0-3: 3.rem;
+
+    /* z index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --font-size-large: 3rem;
+        --font-size-h1: 2.25rem;
+        --font-size-h2: 1.5rem;
+        --font-size-h3: 1.25rem;
+        --font-size-normal: 1rem;
+        --font-size-small: .875rem;
+        --font-size-smaller: .813rem;
+    }
+}

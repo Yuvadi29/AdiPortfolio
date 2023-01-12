@@ -1,0 +1,37 @@
+.collab {
+    text-align: center;
+}
+
+.collab_bg {
+    background-color: var(--primary-color-second);
+    padding-top: 3rem;
+}
+
+.collab_title {
+    font-size: var(--font-size-h2);
+    margin-bottom: var(--mb-0-75);
+}
+
+.collab_description {
+    margin-bottom: var(--mb-1-5);
+}
+
+.collab_title,
+.collab_description {
+    color: #FFF;
+}
+
+.collab__image {
+    /* width: 232px; */
+    justify-self: center;
+    margin-top: -200px;
+}
+
+.button--white {
+    background-color: #ffffff;
+    color: var(--color-primary);
+}
+
+.button--white:hover {
+    background-color: #FFF;
+}
