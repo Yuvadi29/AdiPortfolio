@@ -3,7 +3,6 @@ import './Navbar.css';
 import { AiFillHome, AiFillFile, AiFillCode, AiFillMessage, AiTwotoneAppstore } from 'react-icons/ai';
 import { FaUserAlt, FaTimes } from 'react-icons/fa';
 import { BsBagCheckFill } from 'react-icons/bs';
-import {CgDarkMode} from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 
 
