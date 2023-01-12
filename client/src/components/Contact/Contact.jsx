@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 import axios from 'axios';
 import './Contact.css'
 import { useState } from 'react';
+import Footer from '../Footer/Footer';
 
 const Contact = () => {
 
@@ -103,6 +104,7 @@ const Contact = () => {
                     </form>
                 </div>
             </section>
+            <Footer/>
         </div>
     )
 }
