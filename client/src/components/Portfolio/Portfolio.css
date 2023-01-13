@@ -21,6 +21,8 @@
     font-size: var(--font-size-h3);
     margin-bottom: var(--mb-0-5);
     font-weight: var(--medium-font);
+    margin-top: var(--mb-1-5);
+    text-align: center;
 }
 
 .portfolio_description {

@@ -45,7 +45,7 @@ const Porfolio = () => {
                                     <img src={Motivation} alt="portfolio" className='portfolio__img' />
 
                                     <div className="portfolio__data">
-                                        <h3 className="portfolio_title">Youtube Clone</h3>
+                                        <h3 className="portfolio_title">Motivate Yourself</h3>
                                         <p className="portfolio_description">
                                             This is a project which i made while learning the process of fetching api from an Api Provider and then displaying it on the screen to user. This app basically motivates you whenever you are low. Just click on the Generate button and it will generate a new Quote everytime so that you never feel demotivated.
                                         </p>

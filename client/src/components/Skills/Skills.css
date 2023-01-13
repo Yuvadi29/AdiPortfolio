@@ -1,5 +1,7 @@
 .skills__container {
     row-gap: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .skills__header {

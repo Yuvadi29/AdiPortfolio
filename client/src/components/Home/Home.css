@@ -15,7 +15,7 @@
 }
 
 .blob {
-    width: 200px;
+    width: 270px;
     fill: var(--primary-color);
 }
 
@@ -173,4 +173,13 @@
 .button--link:hover{
     background-color: transparent;
     color: var(--primary-color-alt);
+}
+
+.myself {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: -70px;
+
 }

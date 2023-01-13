@@ -4,8 +4,22 @@
 
 .collab_bg {
     background-color: var(--primary-color-second);
-    padding-top: 3rem;
+    border-radius: 50px;
+    width: 75%;
+    margin: 0 auto;
 }
+
+.collab__data{
+    margin-bottom: 200px;
+    margin-left: -200px;
+}
+
+.collab__grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+}   
 
 .collab_title {
     font-size: var(--font-size-h2);
@@ -23,8 +37,9 @@
 
 .collab__image {
     /* width: 232px; */
+    /* height: 25%; */
     justify-self: center;
-    margin-top: -200px;
+    /* margin-top: -200px; */
 }
 
 .button--white {
@@ -34,4 +49,13 @@
 
 .button--white:hover {
     background-color: #FFF;
+}
+
+.image{
+    align-items: center;
+}
+
+.image img{
+    width: auto;
+    height: 500px;
 }

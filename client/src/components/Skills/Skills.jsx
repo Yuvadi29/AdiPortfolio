@@ -20,7 +20,7 @@ const Skills = () => {
       <span className="section_subtitle">Technical Skills</span>
 
       <div className="skills__container container grid">
-        <div>
+        {/* <div className='skillstype'> */}
           {/* Skill1 */}
           <div className={`skills__content ${openSkillIdx === 0 ? 'skills__open' : 'skills__close'}`}>
             <div className="skills__header">
@@ -135,7 +135,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </div>
       <Services/>
     </section>
